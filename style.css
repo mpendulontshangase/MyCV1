@@ -32,7 +32,7 @@ nav ul li a:hover{
     text-shadow: 1px 1px rgb(226, 202, 202);
 }
 /*------------------------------------------Header------------------------------------------*/
-body{
+html,body{
     text-align: center;
     font-family: Tahoma;
     margin: 0;
@@ -41,25 +41,27 @@ body{
     background-image: url(Images/tag.jpg) ;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
+    white-space: normal;
+    max-width: 100%;
+    overflow-x: hidden;
     color: white;
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     
 }
-body #top{
+#top{
     float:right;
     height: 60px;
     width: 60px;
-    /* padding-top: 800px; */
     position: absolute;
     bottom: 0;
+    /* z-index: 10; */
    mix-blend-mode:color-burn;
    
 }
 header{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 200px;
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* margin-top: 200px; */
     margin-left: 100px;
     line-height: 0.4;
 }
@@ -69,19 +71,39 @@ h2{
 
 }
 section{
-    height: 100vh;
-    scroll-snap-align: start;
+    /* height: 100vh; */
+    /* scroll-snap-align: start; */
 }
 .MainContainer{
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
+    /* scroll-snap-type: y mandatory;
+    overflow-y: scroll; */
     height: 100vh;
 }
 
 .name_dev{
-    font-size: 70px;
+    font-size: 60px;
     text-shadow: 0px 0px 40px black;
-
+    display: flex;
+    gap: 450px;
+    padding-top: 100px;
+    position: relative;
+}
+.name_dev span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 80%;
+    width: 20%;
+    background-color: blueviolet;
+    animation: name 2s ease 1s;
+}
+.pp img{
+    opacity: 0.5;
+    /* height: 500px; */
+    border-radius: 250px;
+    padding-top: 10px;
+    /* box-shadow: 0px 0px 50px; */
+    filter: drop-shadow( 20px 20px 50px black);
 }
 i{
     font-size: 40px;
@@ -89,18 +111,9 @@ i{
 #gradyear img{
     height: 100px;
 }
-.vbutton{
-    height: 50px;
-    width: 300px;
-    border-radius: 200px;
-    font-size: 20px;
-    font-weight: bold;
-    background-color: rgb(24, 142, 138);
-    color: wheat;
-    border: 3px solid ;
-    padding: 10px;
-    line-height: 2;
-
+.vid{
+    display: flex;
+    gap: 20px;
 }
 #vbutton{
     height: 50px;
@@ -109,27 +122,25 @@ i{
     font-size: 20px;
     font-weight: bold;
     background-color: rgb(24, 142, 138);
-    color: wheat;
+    color: white;
     border: 3px solid ;
-    padding: 10px;
+    /* padding: 10px; */
     line-height: 2;
 }
 #vbutton:hover{
     background-color:cornflowerblue;
-    color: white;
     cursor: pointer;
     transition: 0.2;
+    transform: scale(1.2);
 }
 
-.but{
-    padding: 200px;
-}
+
 figcaption{
     font-weight: bold;
 }
 .exp img{
     border-radius: 50px;
-    height: 150px;
+    height: 100px;
     border: 2px solid rgb(21, 170, 135);
 
 }
@@ -140,7 +151,7 @@ figure:hover{
 
 }
 .exp{
-    margin: 100px;
+    margin: 50px;
     display: flex;
     justify-content: space-between;
 }
@@ -151,7 +162,7 @@ figure:hover{
     text-shadow: 0px 0px 10px black;
 }
 .pinterest{
-    margin: 200px;
+    margin: 100px;
     font-size:45px;
     text-shadow: 0px 0px 55px black;
     /* background: rgba(255,255,255,0.2) */
@@ -172,14 +183,14 @@ figure:hover{
     display: flex;
     justify-content: center;
     height: 700px; 
-    gap: 200px;
+    gap: 100px;
     align-items: center;
     
 }
 .q1 ,.q2{
     border: 3px solid white;
     border-radius: 50px;
-    padding: 50px;
+    padding: 20px;
     box-shadow: 0px 0px 10px wheat;
     position: relative;
 }
@@ -214,8 +225,8 @@ figure:hover{
     font-weight: bolder;
 }
 .skillcont{
-    height: 700px;
-    width: 1600px;
+    /* height: 700px; */
+    /* width: 1600px; */
     margin: auto;
     display: flex;
 }
@@ -246,10 +257,30 @@ figure:hover{
 
 
 .contlink{
-    margin: 350px;
+    margin: 250px;
     display: flex;
     justify-content: space-between;
+}
+.numb{
+    text-align: center;
+    filter: drop-shadow(10px 10px 5px black);
 }
 #sm{
     border-radius: 20px;
 }
+
+/* KEY FRAME */
+
+@keyframes name{
+    50%{
+        width: 100%;
+        left:0;
+    }
+    100%{
+        width: 0;
+        left: 100%;
+    }
+}
+/* body::-webkit-scrollbar{
+    display: none;
+  } */

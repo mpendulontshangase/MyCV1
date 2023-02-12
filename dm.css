@@ -4,12 +4,12 @@ body{
     background-size: cover;
 }
 .main{
-    border: 3px solid;
+ 
     height: 100vh;
     width: 100%;
 }
 .com{
-    border: 2px solid;
+    
     text-align: center;
 }
 h3{
@@ -40,9 +40,17 @@ textarea{
     border-radius: 20px;
     padding: 20px;
 }
-#btn:hover{
-    background-color: blue;
-    tran;
+.send:hover{
+    background-color: green;
+    transform: scale(1.2);
+    border-radius: 20px;
+
+}
+.cancel:hover{
+    background-color: red;
+    transform: scale(1.2);
+    border-radius: 20px;
+
 }
 
 

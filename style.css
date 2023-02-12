@@ -1,7 +1,255 @@
-nav{
-    background-color: blue;
-}
+
 nav ul{
-    display: flex;
+    display: flex;  
+    justify-content: center; 
     
+
+}
+nav li{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    list-style: none;
+    padding: 20px 80px;
+    text-align: center;
+    font-weight: bold;
+
+    
+}
+nav ul li a{
+    text-decoration:none;
+    color: rgb(255, 255, 255);
+    text-shadow: 10px 0pc 10px black;
+    font-size: 30px;
+}
+
+a #sub{
+    border: 4px solid white;
+    background-color: green;
+}
+    
+nav ul li a:hover{
+    color: rgb(56, 56, 56);
+    text-shadow: 1px 1px rgb(226, 202, 202);
+}
+/*------------------------------------------Header------------------------------------------*/
+body{
+    text-align: center;
+    font-family: Tahoma;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url(Images/tag.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    color: white;
+    background-color: blueviolet;
+    
+}
+body #top{
+    float:right;
+    height: 60px;
+    width: 60px;
+    /* padding-top: 800px; */
+    position: absolute;
+    bottom: 0;
+   mix-blend-mode:color-burn;
+   
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 200px;
+    margin-left: 100px;
+    line-height: 0.4;
+}
+h2{
+    font-size: 60px;
+    text-shadow: 0px 0px 40px black;
+
+}
+section{
+    height: 100vh;
+    scroll-snap-align: start;
+}
+.MainContainer{
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+.name_dev{
+    font-size: 70px;
+    text-shadow: 0px 0px 40px black;
+
+}
+i{
+    font-size: 40px;
+}
+#gradyear img{
+    height: 100px;
+}
+.vbutton{
+    height: 50px;
+    width: 300px;
+    border-radius: 200px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgb(24, 142, 138);
+    color: wheat;
+    border: 3px solid ;
+    padding: 10px;
+    line-height: 2;
+
+}
+#vbutton{
+    height: 50px;
+    width: 300px;
+    border-radius: 200px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgb(24, 142, 138);
+    color: wheat;
+    border: 3px solid ;
+    padding: 10px;
+    line-height: 2;
+}
+#vbutton:hover{
+    background-color:cornflowerblue;
+    color: white;
+    cursor: pointer;
+    transition: 0.2;
+}
+
+.but{
+    padding: 200px;
+}
+figcaption{
+    font-weight: bold;
+}
+.exp img{
+    border-radius: 50px;
+    height: 150px;
+    border: 2px solid rgb(21, 170, 135);
+
+}
+
+figure:hover{
+    transform: rotate(20deg);
+    
+
+}
+.exp{
+    margin: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#gradyear{
+    font-size: 30px;
+    margin: 50px 50px;
+    text-shadow: 0px 0px 10px black;
+}
+.pinterest{
+    margin: 200px;
+    font-size:45px;
+    text-shadow: 0px 0px 55px black;
+    /* background: rgba(255,255,255,0.2) */
+}
+#skills,#education,#interest,#contacts{
+    margin-top: 150px;
+    font-size: 30px;
+}
+#skills{
+    font-size: 30px;
+}
+.myskills{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.eddiv {
+    display: flex;
+    justify-content: center;
+    height: 700px; 
+    gap: 200px;
+    align-items: center;
+    
+}
+.q1 ,.q2{
+    border: 3px solid white;
+    border-radius: 50px;
+    padding: 50px;
+    box-shadow: 0px 0px 10px wheat;
+    position: relative;
+}
+#sub1,#sub2{
+    padding-top: 20px;
+}
+#sub1,#sub2 li{
+    border: 3px solid;
+    list-style: none;
+    line-height: 2;
+    font-style: oblique;
+    box-shadow: 0px 0px 10px wheat;
+    border-radius: 10px;
+    margin: 30px;
+    padding: 15px;
+}
+#sub1,#sub2 li:hover{
+    transform: scale(1.4);
+}
+#ye{
+    border: 3px solid white;
+    border-radius: 50px;
+    width:200px;
+    background-color: rgb(21, 170, 135);
+    position: absolute;
+    top: -35px;
+    left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+#Dip{
+    font-weight: bolder;
+}
+.skillcont{
+    height: 700px;
+    width: 1600px;
+    margin: auto;
+    display: flex;
+}
+.sk{
+
+    margin: auto;
+    background-color:rgb(255, 255, 255,0.2);
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px wheat;
+    padding: 10px;
+}
+.sk h3{
+    color: white;
+    text-shadow: 0px 0px 10px black;
+}
+.sk:hover{
+    transform: scale(1.4);
+}
+.sk img{
+    height: 250px;
+    width: 210px;
+}
+.sk img #promej{
+    margin: 0px 50px;
+}
+
+/* ............education................... */
+
+
+.contlink{
+    margin: 350px;
+    display: flex;
+    justify-content: space-between;
+}
+#sm{
+    border-radius: 20px;
 }

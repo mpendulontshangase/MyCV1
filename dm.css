@@ -1,0 +1,63 @@
+body{
+    background-image: url(/Images/bgf.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main{
+    border: 3px solid;
+    height: 100vh;
+    width: 100%;
+}
+.com{
+    border: 2px solid;
+    text-align: center;
+}
+h3{
+    font-size: 30px;
+    font-family: tahoma;
+}
+.text{
+    text-align: center;
+}
+textarea{
+    border: 5px solid;
+    border-radius: 20px;
+}
+
+
+
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 30px;
+}
+#btn{
+    font-weight: bolder;
+    font-size: 20px;
+    background-color: transparent;
+    border-radius: 20px;
+    padding: 20px;
+}
+#btn:hover{
+    background-color: blue;
+    tran;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

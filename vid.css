@@ -1,0 +1,29 @@
+
+@media (max-width:500px){
+body{
+    color: bisque;
+}}
+
+video{
+    border: 5px solid black;
+    height: 600px;
+    width: 350px;
+    border-radius: 10%;
+    display: flex;
+    margin: auto;
+}
+#cbtn{
+    height: 70px;
+    width: 200px;
+    border-radius: 200px;
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 870px;
+    margin-top: 50px;
+}
+#cbtn:hover{
+    cursor: pointer;
+    /* color: red; */
+    transition: 0.2;
+    background-color: rgb(24, 142, 138);
+}

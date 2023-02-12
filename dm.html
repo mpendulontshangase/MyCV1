@@ -4,14 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dm.css">
     <title>DM</title>
 </head>
 <body>
-    <h3>Comment here</h3>
-    <textarea id="dm" name="dm" rows="20" cols="100"></textarea>
-    <input type="button" id="cbtn" value="x">
-    <br>
-    <input type="button" id="cbtn" value="SEND">
-
+    <div class="main">
+        <div class="com">
+            <h3>Send a direct message</h3>
+        </div>
+        <div class="text">
+          <textarea id="dm" name="dm" rows="20" cols="100">type here..</textarea>
+        </div>
+        <div class="buttons">
+            <div class="send">
+                <a href="/myresume.html"><input id="btn" type="button" value="SEND"></a>
+            </div>
+            <div class="cancel">
+                <a href="/myresume.html"><input id="btn" type="button" value="CANCEL"></a>
+            </div>
+        </div>
 </body>
 </html>
